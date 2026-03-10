@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- My files might have been a mess and cant work with spy scroll so I used cdn and will fix my file structure later^^ -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <title>ABAD - BOOTSTRAP ACTIVITY 5</title>
+</head>
+
+<style>
+    
+   section {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            padding-top: 50px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+         #neus .overlay {
+            background: rgba(18, 33, 74, 0.5);
+        }
+
+         #mikh .overlay {
+            background: rgba(80, 18, 90, 0.5);
+        }
+
+         #salwa .overlay {
+            background: rgba(144, 41, 10, 0.5);
+        }
+
+         #dover .overlay {
+            background: rgba(12, 76, 139, 0.5);
+        }
+
+    h1 {
+
+            margin-top: 5%;
+            position: relative;
+            color: rgb(228, 239, 253);
+            text-align: center;
+            z-index: 2;
+            font-size: 4rem;
+    }
+
+</style>
+
+<body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <ul class="nav navbar-nav">
+     <li><a href="#neus">Neuschwanstein Castle</a></li>
+        <li><a href="#mikh">The Mikhailovsky</a></li>
+        <li><a href="#salwa">Salwa Palace</a></li>
+        <li><a href="#dover">Dover Castle</a></li>
+    </ul>
+   </nav>
+
+    
+
+   <nav class="navbar navbar-default navbar-fixed-top">
+    <ul class="nav navbar-nav">
+        <li><a href="#neus">Neuschwanstein Castle</a></li>
+        <li><a href="#mikh">The Mikhailovsky</a></li>
+        <li><a href="#salwa">Salwa Palace</a></li>
+        <li><a href="#dover">Dover Castle</a></li>
+    </ul>
+   </nav>
+
+   <section id="neus"  style="background-image: url('https://www.radiustours.com/wp-content/uploads/sites/1996/2023/12/neuschwanstein-castle.webp?w=700&h=700&zoom=2'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+   <div class="overlay"></div> 
+    <h1>Neuschwanstein Castle - Germany</h1>
+</section>
+   <section id="mikh"  style="background-image: url('https://visitrussia.com/assets/thumbnails/8a/8a491ab52fd7f7c97df2fc81464b906b.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="overlay"></div> 
+    <h1>The Mikhailovsky - Russia</h1>
+</section>
+   <section id="salwa"  style="background-image: url('https://media.istockphoto.com/id/1391163275/photo/restored-salwa-palace-under-twilight-sky.jpg?s=612x612&w=0&k=20&c=cmbq_amfMwAfV9VHbqMtqbIvrW6WnxF5zPGLl7ErHuM='); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="overlay"></div> 
+    <h1> Salwa Palace - Saudi Arabia</h1>
+</section>
+   <section id="dover"  style="background-image: url('https://cdn.britannica.com/49/254049-050-F923E520/dover-castle-great-britain.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="overlay"></div> 
+    <h1>Dover Castle - England</h1>
+</section>
+
+  
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
